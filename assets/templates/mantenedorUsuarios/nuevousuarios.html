@@ -1,0 +1,96 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+		<label id="titulo">Mantenedor de Usuarios ></label>  <label id = "subtitulo">Nuevo Usuario</label>
+
+		</div>
+
+		<div id="datos" style="height: 220px !important;">
+			<div id="contenedor">
+				<div class="filtros-left">
+					<div class="filtros-titulo">
+					<label class="subtitulo">Ingrese los datos correspondientes</label>
+					</div>
+					<p>
+						<label class="etiquetas etiquetas-usuario">*Perfil</label>
+						<select class="select-condiciones" id="perfil" name="clase">
+							<option value="vacio">Seleccione...</option>
+														<%
+							_.each(perfiles,function(p)
+							{ %>
+								<option value="<%=p.Id_Perfil%>"><%=p.Tipo%></option>
+							<%});%>
+
+						</select>
+					</p>
+					<p>
+						<label class="etiquetas etiquetas-usuario">&nbsp;&nbsp;Supervisor</label>
+						<select class="select-condiciones" id="responsable" name="responsable">
+							<option value="">Seleccione...</option>
+														<%
+							_.each(supervisor,function(e)
+							{ %>
+								<option value="<%=e.Id_Usuario%>"><%=e.Nombre%></option>
+							<%});%>
+						</select>
+					</p>
+					<p>
+						<label class="etiquetas etiquetas-usuario">*Nombre</label>
+						<input id = "nombre" type="text" class="input-text" name="cliente">
+					</p>
+					<p>
+						<label class="etiquetas etiquetas-usuario">*Sucursal</label>
+						<select class="select-condiciones" id="consignatario" name="consignatario">
+							<option value="vacio">Seleccione...</option>
+														<%
+							_.each(sucursales,function(e)
+							{ %>
+								<option value="<%=e.Id_Sucursal%>"><%=e.Nombre%></option>
+							<%});%>
+						</select>
+					</p>
+					<p>
+						<label id = "etiquetas-usuario">*User</label>
+						<input id = "nuevoUsuario" type="text" class="input-text" name="cliente" style="margin-left: -32px;">
+					</p>
+				</div>
+
+				<div class="filtros-rigth">	
+					<p style ="margin-left:20% !important; width:100%;">
+						<label id="etiquetas-usuario">*Contraseña</label>
+						<input id= "passwd" type="password" class="input-text" name="cliente">
+					</p>
+					</p>
+					<p style ="margin-left:20% !important; width:100%;">
+						<label id="etiquetas-usuario">*Repetir Contraseña</label>
+						<input id = "repitpass" type="password" class="input-text" name="cliente">
+					</p>
+					<p style ="margin-left:20% !important; width:100%;">
+						<label id="etiquetas-usuario">&nbsp;&nbsp;Tel&eacute;fono</label>
+						<input id = "telefono" type="text" class="input-text" name="cliente">
+					</p>
+					<p style ="margin-left:20% !important; width:100%;">
+						<label id="etiquetas-usuario">&nbsp;&nbsp;Celular</label>
+						<input id  ="celular" type="text" class="input-text" name="cliente">
+					</p>
+					<p style ="margin-left:20% !important; width:100%;">
+						<label id="etiquetas-usuario">&nbsp;&nbsp;Email</label>
+						<input id = "email" type="text" class="input-text" name="cliente">
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id = "contenedorres"></div>
+
+		<div id="buttons row">
+			Todos los campos marcados con un asterisco (*) son requeridos.
+	        <div id="cancelarestado" type="button" class="btn-cancelar"></div>
+	        <div id="guardarestado" type="button" class="btn-guardar"></div>
+    	</div>
+		<!--<div id="filtroResultados"></div>-->
+
+	</div>
+
+
+</div>

@@ -1,0 +1,38 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo" class="newTitulo">Mantenedor Productos ></label>  <label id = "subtitulo"> Editar Producto</label>
+		</div>
+
+		<div id="datos" style="height: 100px !important;">
+			<div id="contenedor">
+				<div class="filtros-left">
+					<p>
+						<label class="etiquetas">* Nombre</label>
+						<input id = "nombreproducto"type="text" class="input-text" name="nombreproducto" value="">
+					</p>					
+				</div>
+
+				<div class="editar-rigth">
+					<p>
+						<label class="etiquetas">* Categor&iacute;a</label>
+						<select class="select-condiciones" id="categoriaselect" name="vendedor">
+ 							<option value="">Seleccione...</option>
+ 							<%
+							_.each(categorias,function(s)
+							{ %>
+								<option id = "<%=s.Id_Categoria%>" value="<%=s.Id_Categoria%>"><%=s.Nombre%>
+								</option>
+							<%});%>
+						</select>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="buttons row">
+			Todos los campos marcados con un asterisco (*) son requeridos.
+        	<div id="cancelarproducto" type="button" class="btn-cancelar"></div>
+        	<div id="guardarproducto" type="button" class="btn-guardar"></div>
+    	</div>
+	</div>
+</div>

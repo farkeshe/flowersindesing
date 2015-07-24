@@ -1,0 +1,22 @@
+<div id="condicionesa">
+			<div id="contenedor">
+			<table id = "editarlista" class = "tablageneral" width="50%" border="0" cellpadding="10" cellspacing="0" bordercolor="#666666" style="border-collapse:collapse;">
+				<thead > 
+					<tr>
+						<th style="width: 16.6%;">Cod_Producto</th> 
+						<th style="width: 16.6%;">Descripción</th>
+					</tr> 
+				</thead>
+				<tbody id = "tablaprecios"> <!--cargar esto por template poner id a tbody-->
+					<%
+					_.each(variable,function(m)
+					{ %>
+						<tr>
+						<td style="width: 16.6%;"><%=m.Id_Producto%></td>
+						<td style="width: 16.6%;"><%=m.Nombre%></td>
+						</tr>
+					<%});%>
+					
+				</tbody>
+			</table>
+	</div>

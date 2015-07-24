@@ -1,0 +1,32 @@
+<div id="condicionesa">
+	<table id= "exportarExcel" class = "tablageneral" border="0" cellpadding="10">
+		<thead>
+			<tr>
+				<th style="width: 14.2%;">Rut Cliente</th>
+				<th style="width: 14.2%;">Nombre Cliente</th>
+				<th style="width: 14.2%;">Nombre Destinatario</th>
+				<th style="width: 14.2%;">Tel&eacute;fono</th>
+				<th style="width: 14.2%;">Direcci&oacute;n</th>
+				<th style="width: 14.2%;">Villa-Pob.-Loteo</th>
+				<th style="width: 14.2%;">Sector</th>
+				<th style="width: 14.2%;">Comuna</th>
+			</tr>
+		</thead>
+		<tbody id = "tablaBody">
+			<%
+			_.each(destinatarios,function(m)
+			{ %>
+				<tr id="<%=m.iddestino%>">
+					<td id="<%=m.rutentidad%>" style="width: 16.6%;"><%=m.rutentidad%></td>
+					<td id="<%=m.nombreentidad%>" style="width: 16.6%;"><%=m.nombreentidad%></td>
+					<td id = "<%=m.nombredestinatario%>" style="width: 16.6%;"><%=m.nombredestinatario%></td>
+					<td id = "<%=m.telefonodestinatario%>" style="width: 16.6%;"><%=m.telefonodestinatario%></td>
+					<td id = "<%=m.direcciondestinatario%>" style="width: 16.6%;"><%=m.direcciondestinatario%></td>
+					<td id = "<%=m.nombretipo%>" style="width: 16.6%;"><%=m.nombretipo%></td>
+					<td id = "<%=m.nombresector%>" style="width: 16.6%;"><%=m.nombresector%></td>
+					<td id = "<%=m.nombrecomuna%>" style="width: 16.6%;"><%=m.nombrecomuna%></td>
+				</tr>
+			<%});%>
+		</tbody>
+	</table>
+</div>

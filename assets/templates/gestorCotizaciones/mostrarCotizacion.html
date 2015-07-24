@@ -1,0 +1,172 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo" class="titulocot"></label>
+			<div>
+				<select id="CotAccionesView" name="accion" id="accion" class="accion">
+				</select>
+			</div>
+		</div>
+		<div id="datos">
+			<div id="contenedor">
+				<div id="datos-left">
+					<p>
+						<label class="etiquetas">Cliente</label>
+						<input type="text" id="clienteView" class="input-text" disabled style="background-color: #ffffff;"/>
+					</p>
+					<p>
+						<label class="etiquetas">Rut</label>
+						<input type="text" id="rutClienteView" class="input-text" disabled style="background-color: #ffffff;"/>
+					</p>
+					<p>
+						<label class="etiquetas">Tel&eacute;fono</label>
+						<input type="text" id="telefonoClienteView" class="input-text" disabled style="background-color: #ffffff;"/>
+					</p>
+					<p>
+						<label class="etiquetas">Destinatario</label>
+						<input type="text" id="destinatarioView" class="input-text" disabled style="background-color: #ffffff;"/>
+					</p>
+					<p>
+						<label class="etiquetas">Direcci&oacute;n</label>
+						<input type="text" id="direcciondestinatarioView" class="input-text" disabled style="background-color: #ffffff;"/>
+					</p>
+					<p>
+						<label class="etiquetas">Tel&eacute;fono</label>
+						<input type="text" id="telefonodestinatarioView" class="input-text" disabled style="background-color: #ffffff;"/>
+					</p>
+					
+				</div>
+
+				
+				<div id="datos-right">
+					<p>
+						<label class="etiquetas">Fecha Pedido</label>
+						<input type="text" id="fechapedidoView" class="input-text" disabled style="background-color: #ffffff;"/>
+					</p>
+					<p>
+						<label class="etiquetas">Vendedor</label>
+						<input type="text" id="vendedorView" class="input-text" disabled style="background-color: #ffffff;"/>
+					</p>
+					<p>
+						<label class="etiquetas">Responsable</label>
+						<input type="text" id="responsableView" class="input-text" disabled style="background-color: #ffffff;"/>
+					</p>
+					<p>
+						<label class="etiquetas">Fecha Despacho</label>
+						<input type="text" id="fechadespachoView" class="input-text" disabled style="background-color: #ffffff;"/>
+					</p>
+					<p>
+						<label class="etiquetas">Hora Despacho</label>
+						<input type="text" id="horadespachoView" class="input-text" disabled style="background-color: #ffffff;"/>
+					</p>
+				</div>
+				
+			</div>
+		</div>
+		<div id="detalle">
+			<div id="contenedor">
+				<div id="detalle-titulo">
+					<label class="subtitulo">Detalles Pedido</label>
+				</div>
+				
+				
+				<table id="tablaItem" class="tablaItemView" border="1">
+					<thead>
+						<tr>
+							<th></th>
+							<th></th>
+							<th align="center"><label>Precio</label></th>
+						</tr>
+						<tr>
+							<th align="center"><label>Cantidad</label></th>
+							<th align="center"><label>Producto</label></th>
+							<th align="center"><label>Unidad</label></th>
+							<th align="center"><label>Total</label></th>
+						</tr>
+						<tr>
+							<th colspan="11" style="border-bottom: 1px black solid;"> </th>
+						</tr>
+					</thead>
+						<tbody>
+						
+						</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="11" style="border-bottom: 1px black solid; width:100% !important;"> 
+							</td>
+						</tr>
+						<tr>
+							<td class="td-titleFoot" colspan="3">
+								<label class="etiquetas-foot" style="margin-top:22px !important;">Total Flete</label>
+							</td>
+							<td class="td-boxFoot" colspan="2" align="right" >
+								<input id="CotFleteView" type="text" class="input-foot" style="margin-top:22px !important; background-color: #ffffff;" name="totalFlete" disabled/>
+							</td>
+						</tr>
+						<tr>
+							<td class="td-titleFoot" colspan="3">
+								<label class="etiquetas-foot">Neto</label>
+							</td>
+							<td class="td-boxFoot" colspan="2" align="right">
+								<input id="CotNetoView" type="text" class="input-foot" name="neto" style="background-color: #ffffff;" disabled/>
+							</td>
+						</tr>
+						<tr>
+							<td class="td-titleFoot" colspan="3">
+								<label class="etiquetas-foot">Descuento %</label>
+							</td>
+							<td class="td-boxFoot" colspan="2" align="right">
+								<input id="CotDescuentoView" type="text" class="input-foot" style="background-color: #ffffff;" name="descuento" maxlength="3" disabled/>
+							</td>
+						</tr>
+						<tr>
+							<td class="td-titleFoot" colspan="3">
+								<label class="etiquetas-foot">IVA</label>
+							</td>
+							<td class="td-boxFoot" colspan="2" align="right">
+								<input id="CotIvaView" type="text" class="input-foot" name="iva" style="background-color: #ffffff;" disabled/>
+							</td>
+						</tr>
+						<tr>
+							<td class="td-titleFoot" colspan="3">
+								<label class="etiquetas-foot" style="margin-bottom: 22px! important;">Total</label>
+							</td>
+							<td class="td-boxFoot" colspan="2" align="right">
+								<input id="CotTotalView" type="text" class="input-foot" style="margin-bottom: 22px! important; background-color: #ffffff;" name="total" disabled/>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+				
+			</div>
+		</div>
+		<div id="condiciones">
+			<div id="contenedor">
+				<div id="condiciones-titulo">
+					<label class="subtitulo">Condiciones Comerciales</label>
+				</div>
+
+				<div id="datos-left">
+					<p>
+						<label id="etiquetas-condiciones">Observaciones de fabricaci&oacute;n</label>
+						<textarea type="text" class="input-text" style="height:48.3px !important; width: 68% !important; background-color: #ffffff;" name="instVenta" id="obsfView" disabled></textarea>
+					</p>
+					<p>
+						<label id="etiquetas-condiciones" >Observaciones de despacho</label>
+						<textarea type="text" class="input-text" style="height:48.3px !important; width: 68% !important; background-color: #ffffff;" name="instFabricacion" id="obsdView" disabled></textarea>
+					</p>
+	
+				</div>
+				<div id="datos-right">
+					<p>
+						<label id="etiquetas-condiciones">Observaciones generales</label>
+						<textarea type="text" class="input-text" style="height:48.3px !important; width: 68% !important; background-color: #ffffff;" name="instDespacho" id="obsgView" disabled></textarea>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="buttons">
+			<div id="aceptar" type="button" class="btn-aceptar" data-dismiss="modal"></div>
+		</div>
+	</div>
+</div>

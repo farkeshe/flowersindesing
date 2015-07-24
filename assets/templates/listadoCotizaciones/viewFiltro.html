@@ -1,0 +1,64 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo">Listado de Pedidos</label>
+		</div>
+
+		<div id="datos" style="height: 217px !important;">
+			<div id="contenedor">
+				<div class="filtros-left">
+					<div class="filtros-titulo">
+						<label class="subtitulo">Filtros de b&uacute;squeda</label>
+					</div>
+					<p>
+						<label class="etiquetas">Clase</label>
+						<select id="filtroClase" class="select-condiciones" name="clase">
+						</select>
+					</p>
+					<p>
+						<label class="etiquetas">Vendedor</label>
+						<select id="flitroVendedor" class="select-condiciones" name="vendedor">
+							<option value="0" selected="selected">Seleccione</option>
+						</select>
+					</p>
+					<p>
+						<label class="etiquetas">Cliente</label>
+						<div class="input-append">
+ 							<input type="text" id="autoc1" class="input-buscar" name="cliente" style="margin-bottom: 4px;
+ 							width: 35.5%;"/>
+ 							<input type="hidden" id="DV" class="input-text" disabled/>
+  							<div id="buscarCliente" class="add-on add-btn buscar" style="margin-top: -4px !important;" title="Buscador de Clientes"></div>
+						</div>
+					</p>
+					<p>
+						<label class="etiquetas">Destinatario</label>
+						<select id="consignatario" class="select-condiciones"  name="consignatario">
+							<option value="0" selected="selected">Seleccione</option>
+						</select>
+					</p>
+				</div>
+
+				<div class="filtros-rigth">
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">Producto</label>
+						<select id="producto" class="select-condiciones" name="producto">
+							<option value="0" selected="selected">Seleccione</option>
+						</select>
+					</p>
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">Rango Fechas</label>
+						<input id="fechaDesde" type="text" class="input-textrango input-calendar" name="fecha cotizacion" value=""/>
+						<label style="color:#5f5f5f;">Y</label>
+						<input id="fechaHasta" type="text" class="input-textrango input-calendar" name="fecha cotizacion" value=""/>
+					</p>
+					<p>
+						<div id="filtrar" class="btn-filtrar" style="margin-right: 1.2%;"> </div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="filtroResultados"></div>
+
+	</div>
+</div>

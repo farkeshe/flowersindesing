@@ -1,0 +1,118 @@
+	<!--	<div id="resultados">
+				<div id="detalle-titulo">
+						<div id="nuevalista" class="btn-add"> </div>
+					<label id="titulo">Resultados</label>
+						
+
+						<!--<div id = "contador"><label>1-50 de 200</label></div>	
+
+				   <div id = "adelante" style="margin-right: 148px;margin-top: -20px;"> </div>
+					<div id = "atras" style="margin-top: -20px;margin-right: 168px;"> </div>-->
+
+			<!--		<div class="paginador">
+		<div id="next" class = "btn-adelante" title="Siguiente"> </div>
+		<div id="previous" class = "btn-atras" title="Anterior"> </div>
+		<label id= "labelPaginador" class= "contadorPaginador"></label>
+	</div>
+				<select name="acciones" id="accionesLista" class="accionlista">
+					<option value="accion">Acciones</option>
+						  <option value="exportar">Exportar Excel</option>
+						  <!--
+						  <option value="clonar">Clonar</option>
+						  <option value="cambiar">Cambiar Estado</option>
+						  -->
+					<!--	  <input type="hidden" id="datos_a_enviar" name="datos_a_enviar">
+						 <!-- <option value="eliminar">Eliminar</option>-->
+			<!--	</select>
+		
+				</div>
+		</div>-->
+	<div id="condicionesa">
+			<table id="exportarExcel" class = "tablageneral" width="50%" border="0" cellpadding="10" cellspacing="0" bordercolor="#666666" style="border-collapse:collapse;">
+				<thead > 
+					<tr>
+						<th style="width: 16.6%;">Subgerencia</th> 
+						<th style="width: 16.6%;">Nombre Lista</th>
+						<th style="width: 16.6%;">Tipo</th>
+						<th style="width: 16.6%;">Estado</th> 
+						<th style="width: 16.6%;">Desde</th> 
+						<th style="width: 16.6%;">Hasta</th> 
+					</tr> 
+				</thead>
+				<tbody id = "tablaBody">
+					<%
+					_.each(variable,function(m)
+					{ %>
+						<tr id="<%=m.Id_ListaPrecio%>">
+						<td id = "<%=m.Id_Subgerencia%>" style="width: 16.6%;"><%=m.Nombre%></td>
+						<td id = "<%=m.name%>" style="width: 16.6%;"><%=m.name%></td>
+						<td id = "<%=m.Tipo%>" style="width: 16.6%;"><%=m.Tipo%></td>
+						<td id = "<%=m.Estadolista%>" style="width: 16.6%;"><%=m.Estadolista%></td>
+						<td style="width: 16.6%;"><%=m.Periodo_Desde%></td>
+						<td style="width: 16.6%;"><%=m.Periodo_Hasta%></td>
+						</tr>
+					<%});%>
+					
+				</tbody>
+			</table>
+			<!--<div class="div-resultado">
+	<table id= "exportarExcel" class = "tablageneral" border="0" cellpadding="10">
+		<thead>
+			<tr>
+				<th style="width: 16.6%;">Subgerencia</th> 
+				<th style="width: 16.6%;">Nombre Lista</th>
+				<th style="width: 16.6%;">Tipo</th>
+				<th style="width: 16.6%;">Estado</th> 
+				<th style="width: 16.6%;">Desde</th> 
+				<th style="width: 16.6%;">Hasta</th> 
+			</tr>
+		</thead>
+		<tbody id = "tablaBody">
+			<tr>
+				<td style="width: 14.2%;">001</td>
+				<td style="width: 14.2%;">04-02-2013</td>
+				<td style="width: 14.2%;">Ingresada</td>
+				<td style="width: 14.2%;">Sandra</td>
+				<td style="width: 14.2%;">Luis</td>
+				<td style="width: 14.2%;">Homecenter</td>
+				<td style="width: 14.2%;">15.000.000</td>
+			</tr>
+			<tr>
+				<td style="width: 14.2%;">001</td>
+				<td style="width: 14.2%;">04-02-2013</td>
+				<td style="width: 14.2%;">Ingresada</td>
+				<td style="width: 14.2%;">Sandra</td>
+				<td style="width: 14.2%;">Luis</td>
+				<td style="width: 14.2%;">Homecenter</td>
+				<td style="width: 14.2%;">15.000.000</td>
+			</tr>
+			<tr>
+				<td style="width: 14.2%;">001</td>
+				<td style="width: 14.2%;">04-02-2013</td>
+				<td style="width: 14.2%;">Ingresada</td>
+				<td style="width: 14.2%;">Sandra</td>
+				<td style="width: 14.2%;">Luis</td>
+				<td style="width: 14.2%;">Homecenter</td>
+				<td style="width: 14.2%;">15.000.000</td>
+			</tr>
+			<tr>
+				<td style="width: 14.2%;">001</td>
+				<td style="width: 14.2%;">04-02-2013</td>
+				<td style="width: 14.2%;">Ingresada</td>
+				<td style="width: 14.2%;">Sandra</td>
+				<td style="width: 14.2%;">Luis</td>
+				<td style="width: 14.2%;">Homecenter</td>
+				<td style="width: 14.2%;">15.000.000</td>
+			</tr>
+			<tr>
+				<td style="width: 14.2%;">001</td>
+				<td style="width: 14.2%;">04-02-2013</td>
+				<td style="width: 14.2%;">Ingresada</td>
+				<td style="width: 14.2%;">Sandra</td>
+				<td style="width: 14.2%;">Luis</td>
+				<td style="width: 14.2%;">Homecenter</td>
+				<td style="width: 14.2%;">15.000.000</td>
+			</tr>
+		</tbody>
+	</table>-->
+	</div>

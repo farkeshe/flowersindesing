@@ -1,0 +1,19 @@
+<tr iditem="<%=newItem%>">
+	<td class="td-cantidad">
+		<input type="text" id="cantidad<%=contLin%>" class="cantidad" row="<%=contLin%>">
+	</td>
+	<td class="td-producto">
+		<input type="text" id="producto<%=contLin%>" class="producto" row="<%=contLin%>">
+		<div class="btnfiltro-producto" row="<%=contLin%>" title="Buscador de Productos"></div>
+		<input type="hidden" name="idProducto" id="idProducto<%=contLin%>" row="<%=contLin%>" value="" />
+	</td>
+	<td class="td-precioUnidad">
+		<input type="text" id="precioUnidad<%=contLin%>" class="precio-unidad" row="<%=contLin%>">
+	</td>
+	<td class="td-precioTotal">
+		<input type="text" id="precioTotal<%=contLin%>" class="precio-total" row="<%=contLin%>" disabled>
+	</td>
+	<td class="td-delete">
+		<div class="clsEliminarFila updateTfoot" id="btndelete" row="<%=contLin%>"> </div>
+	</td>
+</tr>

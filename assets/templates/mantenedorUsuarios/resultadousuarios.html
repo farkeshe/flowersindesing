@@ -1,0 +1,32 @@
+<div id="condicionesa">
+	<table id= "exportarExcel" class = "tablageneral" border="0" cellpadding="10">
+		<thead>
+			<tr>
+				<th style="width: 14.2%;">Nombre</th>
+				<th style="width: 14.2%;">Teléfono</th>
+				<th style="width: 14.2%;">Celular</th>
+				<th style="width: 14.2%;">Email</th>
+				<th style="width: 14.2%;">User</th>
+				<th style="width: 14.2%;">Tipo</th>
+				<th style="width: 14.2%;">Sucursal</th>
+				<th style="width: 14.2%;">Supervisor</th>
+			</tr>
+		</thead>
+		<tbody id = "tablaBody">
+			<%
+			_.each(variable,function(s)
+			{ %>
+				<tr id="<%=s.Id_Usuario%>">
+					<td id="<%=s.Nombre%>" = style="width: 16.6%;"><%=s.Nombre%></td>
+					<td id = "<%=s.Telefono%>" style="width: 16.6%;"><%=s.Telefono%></td>
+					<td id = "<%=s.Celular%>" style="width: 16.6%;"><%=s.Celular%></td>
+					<td id = "<%=s.Email%>" style="width: 16.6%;"><%=s.Email%></td>
+					<td id = "<%=s.User%>" style="width: 16.6%;"><%=s.User%></td>
+					<td id = "<%=s.Tipo%>" style="width: 16.6%;"><%=s.Tipo%></td>
+					<td id = "<%=s.Sucursal%>" style="width: 16.6%;"><%=s.name%></td>
+					<td id = "<%=s.Supervisor%>" style="width: 16.6%;"><%=s.super%></td>
+				</tr>
+			<%});%>	
+		</tbody>
+	</table>
+</div>

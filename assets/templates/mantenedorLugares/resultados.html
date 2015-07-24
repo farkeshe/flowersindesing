@@ -1,0 +1,26 @@
+<div>
+		<table id="exportarExcel" class = "tablageneral" width="50%" border="0" cellpadding="10" cellspacing="0" bordercolor="#666666" style="border-collapse:collapse;">
+			<thead > 
+				<tr>
+					<th style="width: 25%;">Identificador</th> 
+					<th style="width: 25%;">Nombre</th>
+					<th style="width: 25%;">Tipo</th>
+					<th style="width: 25%;">Sector</th>
+					<th style="width: 25%;">Comuna</th>
+				</tr> 
+			</thead>
+			<tbody id = "tablaBody">
+				<%
+				_.each(lugares,function(l)
+				{ %>
+					<tr id ="<%=l.Id_Lugar%>">
+						<td style="width: 20%;"><%=l.Id_Lugar%></td>
+						<td style="width: 20%;"><%=l.nombrelugar%></td>
+						<td style="width: 20%;"><%=l.nombretipo%></td>
+						<td style="width: 20%;"><%=l.nombresector%></td>
+						<td style="width: 20%;"><%=l.nombrecomuna%></td>
+					</tr>
+				<%});%>
+			</tbody>
+		</table>
+</div>

@@ -1,0 +1,91 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo" class="newTitulo" style="text-decoration: underline; cursor: pointer;">Lista de Precios></label>
+			<label id = "subtitulo">Clonar</label>
+		</div>
+		<div id="precioeditar">
+			<div id="contenedor">
+				<div id="datos-left">
+					<p>
+						<label class="etiquetas">Subgerencia</label>
+						<select id = "subgerencianueva" class="input-text-drop" name="mydropdown">
+							<option value="vacio">Seleccione...</option>
+							<%
+					_.each(subgerencia,function(e)
+					{ %>
+						<option value="<%=e.Id_Subgerencia%>"><%=e.Nombre%></option>
+					<%});%>
+						</select>
+					</p>
+					<p>
+						<label class="etiquetas">Nombre Lista</label>
+						<input id = "nombrelista" type="text" class="input-text" name="Nombre" value="">
+					</p>
+					<!--<p>
+						<label id="etiquetas">Descripción</label>
+						<textarea id="desc" type="text" class="input-text-editar" style="width: 42%;"></textarea>
+					</p>-->
+				</div>
+
+				<div id="filtros-rigth" class  ="editar-rigth">
+					<p>
+						<label style="margin-left: 25.9%;" class="etiquetas" >Tipo</label>
+						<select id="tipolista" name="mydropdown" class="input-text-drop">
+							<option value="vacio">Seleccione...</option>
+							<option value="Subgerencia">Subgerencia</option>
+							<option value="Volumen">Volumen</option>
+							<option value="Exterior">Exterior</option>
+						</select>
+					</p>
+				<!--	<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">Rango Fechas</label>
+						<input style="margin-left: 6px;"id="desde" type="text" class="input-textrango input-calendar" name="fecha cotizacion" value=""/>
+						<label style="color:#5f5f5f;">Y</label>
+						<input id="hasta" type="text" class="input-textrango input-calendar" name="fecha cotizacion" value=""/>
+					</p>-->
+					<p>
+						<!--<div id = "guardarprecio"> </div>-->
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="resultados">
+			<div class="paginador">
+		<div class = "btn-adelante"> </div>
+		<div class = "btn-atras"> </div>
+		<label class= "contadorPaginador" >1-14 de 14</label>
+	</div>
+		</div>
+
+		<div id="condicionesa">
+			<div id="contenedorproductos">
+			<table id = "Exporta" class = "tablageneral" width="50%" border="0" cellpadding="10" cellspacing="0" bordercolor="#666666" style="border-collapse:collapse;">
+			<thead > 
+					<tr>
+						<th style="width: 1% !important;"></th>
+						<th style="width: 16.6%;">Cod_Producto</th> 
+						<th style="width: 16.6%;">Descripción</th>
+					</tr> 
+				</thead>
+				<tbody id = "tablaprecios"> <!--cargar esto por template poner id a tbody-->
+					<%
+					_.each(variable,function(d)
+					{ %>
+						<tr id = "<%=d.Id_Producto%>">
+						<td class = "<%=d.cantidad%>" style="width: 1% !important;" title="Productos sin precio"></td>
+						<td id = "<%=d.Id_Producto%>" style="width: 16.6%;"><%=d.Id_Producto%></td>
+						<td id = "<%=d.Nombre%>" style="width: 16.6%;"><%=d.Nombre%></td>
+						</tr>
+					<%});%>
+					
+				</tbody>
+			</table>
+	</div>
+	<div class = "modal fade" id = "modal-art"></div>
+	<div id="buttons">
+			<div id="cancelar" type="button" class="btn-cancelar"></div>
+			<div id="guardarclonar" type="button" class="btn-guardar"></div>
+		</div>
+</div>
+

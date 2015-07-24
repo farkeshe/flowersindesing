@@ -1,0 +1,47 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo" class="newTitulo">Comentarios de entrega</label>
+		</div>
+
+		<div id="datos" style="height: 200px !important;">
+			<div id="contenedor">
+				<div>
+					<p style="margin-bottom: 12px !important;">
+						<label id="mensaje" style="color:#ff3c16 ;font-family: 'Calibri', 'Open Sans', 'Arial', 'sans-serif' !important;font-size: 12pt !important;">&nbsp;&nbsp;</label>
+						<label class="etiquetas">Recibi&oacute; Destinatario</label>
+						<label style=" margin-top: -12px;">Si </label>
+						<input type="radio" id="radio1" name="radios" value="1" class="rg">
+						<label style="margin-top: -12px;">No </label>
+						<input type="radio" id="radio2" name="radios" value="0" class="rg"  checked>
+					</p>
+					<p style="margin-bottom: 4px !important;">
+						<label class="mensaje2" style="color:#ff3c16 ;font-family: 'Calibri', 'Open Sans', 'Arial', 'sans-serif' !important;font-size: 12pt !important;">*</label>
+						<label class="etiquetas">Nombre receptor</label>
+ 						<input type="text" id="receptor" class="input-buscar" name="cliente" style="margin-bottom: 4px; width: 60%;"/>
+					</p>
+					<p style="margin-bottom: 0px !important;">
+						<label id="mensaje" style="color:#ff3c16 ;font-family: 'Calibri', 'Open Sans', 'Arial', 'sans-serif' !important;font-size: 12pt !important;">*</label>
+
+						<label class="etiquetas">Hora de entrega</label>
+						<input type="text" class="input-text" id = "hora" name="rut" value="" maxlength="2" style="width: 10% !important; text-align: right !important;">
+						<input type="text" class="input-text" id = "minutos" name="rut" value="" maxlength="2" style="width: 10% !important; text-align: right !important;">
+						<label id="mensajehora" style="color:#ff3c16 ;font-family: 'Calibri', 'Open Sans', 'Arial', 'sans-serif' !important;font-size: 12pt !important;">Hora no valida</label>
+					</p>
+					<p style="margin-bottom: 0px !important;">
+						<label class="etiquetas">Comentarios Adicionales</label>
+						<label class="mensaje2" style="color:#ff3c16 ;font-family: 'Calibri', 'Open Sans', 'Arial', 'sans-serif' !important;font-size: 12pt !important;">*</label>
+						<!-- <input type="text" class="input-text" id = "direccion" name="rut" value=""> -->
+						<textarea type="text" class="input-text" style="height:100px !important; width: 60% !important;" name="instFabricacion" id="comentarios" maxlength="500"></textarea>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div >
+			<label id="mensajefinal" style="font-family: 'Calibri', 'Open Sans', 'Arial', 'sans-serif' !important;font-size: 12pt !important; font-size:padding-left: 10% !important;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Todos los campos marcados con un asterisco (*) son requeridos.</label> 
+	        <div id="guardardestinatario" type="button" class="btn-guardar" style="float:none; margin-left: 80%;!important;" ></div>
+    	</div>
+		<!--<div id="filtroResultados"></div>-->
+
+	</div>
+</div>

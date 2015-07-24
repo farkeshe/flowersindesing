@@ -1,0 +1,54 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo">Historial de Pedidos</label>
+		</div>
+
+		<div id="datos" style="height: 172px !important;">
+			<div id="contenedor">
+				<div class="filtros-left">
+					<div class="filtros-titulo">
+						<label class="subtitulo">Filtros de b&uacute;squeda</label>
+					</div>
+					
+					<p>
+						<label class="etiquetas">N&deg; Pedido</label>
+						<input id="trackingPedido" class="input-text"  name="pedidos"\>
+					<!--	<select id="trackingPedido" class="select-condiciones" name="pedidos">
+							<option value="0" selected="selected">Seleccione</option>
+						</select>-->
+					</p>
+					<p>
+						<label class="etiquetas">Rango Fechas</label>
+						<input id="fechaDesde" type="text" class="input-textrango input-calendar" name="fecha cotizacion" value=""/>
+						<label style="color:#5f5f5f;">Y</label>
+						<input id="fechaHasta" type="text" class="input-textrango input-calendar" name="fecha cotizacion" value=""/>
+					</p>
+				</div>
+
+				<div class="filtros-rigth">
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">Clase</label>
+						<select id="trackingClase" class="select-condiciones" name="clase">
+							<option value="0" selected="selected">Seleccione</option>
+						</select>
+					</p>
+
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">Usuario</label>
+						<select id="trackingUsuario" class="select-condiciones" name="usuarios">
+							<option value="0" selected="selected">Seleccione</option>
+						</select>
+					</p>
+									
+					<p>
+						<div id="trackingFiltrar" class="btn-filtrar" style="margin-right: 1.2%;"> </div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="filtroResultados"></div>
+
+	</div>
+</div>

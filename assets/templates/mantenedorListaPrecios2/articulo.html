@@ -1,0 +1,68 @@
+<div id = "modalarticulo" class="contenedorModal">
+    <label class="cliente-titulo">Modificar Precio
+    </label>
+    <div data-dismiss="modal">
+    </div>
+    <div class="input-append input-cliente">
+    </div> 
+    <div class="cont">
+        <table class="tabla-contenedor">
+            <tr>
+                <td>
+                    <table class="tabla-head">
+                        <tr>
+                            <td class="td-nombre">Cód. Articulo</td>
+                            <td class="td-nombre">Diametro</td>
+                            <td class="td-nombre">Largo</td>
+                            <td class="td-nombre">Ancho</td>
+                            <td class="td-nombre">Alto</td>
+                            <td class="td-nombre">Volumen</td>
+                            <td class="td-nombre">Precio</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" style="border-bottom: 1px #5f5f5f solid;"> </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="div-datos">
+                        <form id ="form">
+                            <table id = "tablaarticulos" name = "tablaarticulos" class="tabla-datos">
+                                <tbody id = "precioarticulo">
+                                    <% _.each(variable,function(m) { %>
+                                        <tr id ="<%=m.pre%>" class = "<%=m.Precio%> <%=m.pre%> <%=m.Id_Articulo%>">
+                                            <td class = "mytd" value = "<%=m.Precio%>">
+                                                <input class="bout" type = "hidden" style="width: 70px;" id="desde" type="text" value = <%=m.Id_AssocArticulo%>>
+                                            </td>
+                                            <td id = "<%=m.Id_Articulo%>" value = "<%=m.Id_Articulo%>" style="width: 16.6%;"><%=m.Id_Articulo%></td> 
+                                            <td id = "<%=m.Diametro%>" value = "<%=m.Diametro%>" style="width: 16.6%;"><%=m.Diametro%></td>
+                                            <td value = "<%=m.Largo%>" style="width: 16.6%;"><%=m.Largo%></td>
+                                            <td value = "<%=m.Ancho%>" style="width: 16.6%;"><%=m.Ancho%></td>
+                                            <td value = "<%=m.Alto%>" style="width: 16.6%;"><%=m.Alto%></td>
+                                            <td value = "<%=m.Volumen%>" style="width: 16.6%;"><%=m.Volumen%></td>
+                                            <td class = "mytd" value = "<%=m.Precio%>" style="width: 16.6%;" value = <%=m.Precio%>>
+                                                <input class="bout <%=m.Id_Articulo%>" id = "<%=m.Precio%>" style="width: 70px;" id="desde" type="text" value = <%=m.Precio%>>
+                                            </td>
+                                               <td> <input type = "hidden" class="bout" id = "<%=m.Precio%>" style="width: 70px;"  type="text" value = <%=m.Precio%>> </td>
+                                                  <td> <input type = "hidden" class="bout" id = "a" style="width: 70px;" type="text" value = <%=m.Id_Articulo%>> </td>
+                                        </tr>
+                                    <%});%>
+                                </tbody>         
+                            </table>
+                        </form> 
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="11" style="border-bottom: 1px #5f5f5f solid;"> </td>
+            </tr>
+        </table>
+    </div>
+    <div id="buttons row" style="float:right;margin-top: 10px;">
+        <div id="cancelar" type="button" class="btn-cancelar" data-dismiss="modal"></div>
+        <div id="guardararticulo" type="button" class="btn-guardar" data-dismiss="modal"></div>
+    </div>
+</div>
+

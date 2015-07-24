@@ -1,0 +1,75 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo">Mantenedor Clientes</label>
+		</div>
+		<div id="datos" style="height: 160px !important;">
+			<div id="contenedor">
+				<div class="filtros-left">
+					<div class="filtros-titulo">
+						<label class="subtitulo">Filtro Clientes</label>
+					</div>
+					<p>
+						<label class="etiquetas" style=" margin-top: -6px;">Nombre Cliente</label>
+						<div class="input-append">
+ 							<input type="text" id="autoc1" class="input-buscar" name="cliente" style="margin-bottom: 4px;
+ 							width: 42%;"/>
+						</div>
+					</p>
+					<p>
+						<label class="etiquetas">Rut Entidad</label>
+						<input id = "DV" type="text" class="input-text" name="rut" value="" maxlength="8">
+					</p>
+				</div>
+
+				<div class="filtros-rigth">
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">Tipo</label>
+						<select class="select-condiciones" id="tipoentidad" name="tipoentidad" disabled>
+							<option value="Cliente">Cliente</option>
+						</select>
+					</p>
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">Clasificaci&oacute;n</label>
+						<select class="select-condiciones" id="clasificacion" name="categoriaentidad">
+							<option value="vacio">Seleccione...</option>	
+							<%
+							_.each(clasificacion,function(s)
+							{ %>
+								<option id = "<%=s.Id_ClasificacionEntidad%>" value="<%=s.Id_ClasificacionEntidad%>"><%=s.Nombre%>
+								</option>
+							<%});%>
+						</select>
+					</p>
+					
+					<p>
+						<div id="filtrarEntidades" class="btn-filtrar" style="margin-right: 1.2%;"> </div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div id  = "cargatablaresult">
+			<div id = "resultados">
+				<div id ="detalle-titulo">
+					<div id="nuevaentidad" class="btn-add" title ="Nueva <br> Entidad"> 
+					</div>
+					<label id="titulo">Resultados</label>
+					<select name="acciones" id="accionesentidades" class="accionlista">
+						<option value="Acciones">Acciones</option>
+					</select>
+					<div class="paginador">
+						<div id="next" class = "btn-adelante" title="Siguiente"></div>
+						<div id="previous" class = "btn-atras" title="Anterior"></div>
+						<label id= "labelPaginador" class= "contadorPaginador"></label>
+					</div>
+				</div>
+			</div>
+			<div class = "modal fade" id = "modal-estado">
+			</div>
+		</div>
+		<div id = "cargatabla">
+		</div>
+	</div>
+</div>

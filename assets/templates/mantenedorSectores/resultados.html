@@ -1,0 +1,24 @@
+<div>
+		<table id="exportarExcel" class = "tablageneral" width="50%" border="0" cellpadding="10" cellspacing="0" bordercolor="#666666" style="border-collapse:collapse;">
+			<thead > 
+				<tr>
+					<th style="width: 25%;">Id Sector</th> 
+					<th style="width: 25%;">Nombre</th>
+					<th style="width: 25%;">Comuna</th>
+					<th style="width: 25%;">Precio Flete</th>
+				</tr> 
+			</thead>
+			<tbody id = "tablaBody">
+				<%
+				_.each(sectores,function(m)
+				{ %>
+					<tr id ="<%=m.Id_Sector%>">
+						<td style="width: 20%;"><%=m.Id_Sector%></td>
+						<td style="width: 20%;"><%=m.Nombre%></td>
+						<td style="width: 20%;"><%=m.NombreComuna%></td>
+						<td style="width: 20%;"><%=m.PrecioFlete%></td>
+					</tr>
+				<%});%>
+			</tbody>
+		</table>
+</div>

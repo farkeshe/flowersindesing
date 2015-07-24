@@ -1,0 +1,64 @@
+<div id="top" class="navbar">
+	<div class="row" id="header">
+		<div id="logo"></div>
+		<div class="login">
+			<div id="menuUsuario" class="row usuario"></div>
+			<div id="logOut" class="row login_out">cerrar sesi&oacute;n</div>
+		</div>
+		</div>		
+	</div>
+</div>
+
+<div class="row" id="body">
+	<!-- Comienzo de barra izquierda-->
+	<div id="barraizq">
+		<div class="accordion" id="accordion2">
+
+			<div class="accordion-group">
+				<div class="accordion-heading">
+				    <a id="headCot" class="accordion-toggle cotizaciones" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+				    	<div id="menuCotizaciones" class="accordion-seccion head-dis">Aplicaciones</div>
+				    </a>
+				</div>
+
+			    <div id="collapseTwo" class="accordion-body collapse">
+				    <div class="accordion-inner init"><div id ="NuevaCotizacion" class="itemsMenu">Nuevo Pedido</div></div>
+				    <div class="accordion-inner"><div id ="ListadoCotizacion" class="itemsMenu">Listado de Pedidos</div></div>
+				    <div class="accordion-inner"><div id ="trackingCotizacion" class="itemsMenu">Tracking de Pedidos</div></div>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="accordion-group">
+				<div class="accordion-heading">
+				    <a id="headMant"class="accordion-toggle mantenedores" data-toggle="collapse" data-parent="#accordion2" href="#collapseTree">
+				        <div  id="menuMantenedores" class="accordion-seccion head-dis">Mantenedores</div>
+				    </a>
+				</div>
+
+				<div id="collapseTree" class="accordion-body collapse">
+					<div class="accordion-inner init"><div id ="entidades" class="itemsMenu">Clientes</div></div>
+				    <div class="accordion-inner"><div id ="destinatarios" class="itemsMenu">Destinatarios</div></div>
+				    <div class="accordion-inner"><div id ="usuarios" class="itemsMenu">Usuarios</div></div>
+				    <div class="accordion-inner"><div id ="productos" class="itemsMenu">Productos</div></div>
+				    <div class="accordion-inner"><div id ="sectores" class="itemsMenu">Sectores</div></div>
+				    <div class="accordion-inner"><div id ="lugares" class="itemsMenu">Villas-Poblaciones-Loteos</div></div>
+				    <div class="accordion-inner"><div id ="repartidores" class="itemsMenu">Repartidores</div></div>
+				    <div class="accordion-inner"><div id ="listaprecios" class="itemsMenu">Lista de Precios</div></div>
+				    <div class="accordion-inner"><div id ="mcategoria" class="itemsMenu">Categoria</div></div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!--Aqui van el contenido de template principal -->
+	<div id="appView">
+	</div>
+	<!--Fin del contenido -->
+
+	<!--Aqui va el contenido del segundo template para ocultar el principal (change history) -->
+	<div id="appViewNext">
+	</div>
+	<!--Fin del contenido del segundo template (change history) -->
+</div>

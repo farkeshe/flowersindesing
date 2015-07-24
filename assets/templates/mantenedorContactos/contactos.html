@@ -1,0 +1,87 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo">Mantenedor Contactos</label>
+		</div>
+
+		<div id="precio">
+			<div id="contenedor">
+				<div id="datos-left">
+					<div class="filtros-titulo">
+						<label class="subtitulo">Filtro Contactos</label>
+					</div>
+					<p>
+						<label class="etiquetas" style=" margin-top: -6px;">Nombre Entidad</label>
+						<div class="input-append">
+ 							<input type="text" id="autoc1" class="input-buscar" name="cliente" style="margin-bottom: 4px;
+ 							width: 35.6%;"/>
+ 							<div id="" class="add-on add-btn buscar" style="margin-top: -4px !important;"></div>
+						</div>
+					</p>
+					<p>
+						<label class="etiquetas">Rut Entidad</label>
+						<input id = "rutcliente" type="text" class="input-text" name="rut" value="">
+					</p>
+					<p>
+					<label class="etiquetas">Destinos</label>
+						<select class="select-condiciones" id="destinos" name="mydropdown">
+							<option value="vacio">Seleccione...</option>
+						</select>
+					</p>
+				</div>
+
+				<div id="precio-rigth">
+					
+					<p>
+
+	        
+	                    	<label style="margin-left: 26%;" class="etiquetas">Entidades</label>
+	                        <td  class="td-radio"><input id = "nueva" type="radio" name="tabla" value="Activa"></td>
+	                        <td id = "radiocliente" class="td-nombre">Cliente</td>
+	
+                    </p>   
+					<p>
+	      
+	                        <td  class="td-radio"><input id = "nueva" type="radio" name="tabla" value="Activa"></td>
+	                        <td id = "radioproveedor" class="td-nombre">Proveedor</td>
+	           
+                    </p>  
+
+					<p>
+						<div id="filtrarUsuarios" class="btn-filtrar" style="margin-top: 22px;"> </div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id  = "cargatablaresult">
+			<div id = "resultados">
+				<div id ="detalle-titulo">
+					<div id="nuevocontacto" class="btn-add" title ="Nuevo Contacto"> 
+					</div>
+					<label id="titulo">Resultados</label>
+					<!--<div id = "contador"><label>1-50 de 200</label></div>	
+			   		<div id = "adelante" style="margin-right: 148px;margin-top: -20px;"> </div>
+					<div id = "atras" style="margin-top: -20px;margin-right: 168px;"> </div>-->
+					<div class="paginador">
+						<div id="next" class = "btn-adelante" title="Siguiente"> 
+						</div>
+						<div id="previous" class = "btn-atras" title="Anterior"> 
+						</div>
+						<label id= "labelPaginador" class= "contadorPaginador">
+						</label>
+					</div>
+					<select name="acciones" id="accionesLista" class="accionlista">
+						<option value="accion">Acciones</option>
+					</select>
+				</div>
+			</div>
+			<div class = "modal fade" id = "modal-estado">
+			</div>
+		</div>
+		<div id = "cargatabla">
+
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,101 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo">Mantenedor Lista de Precios</label>
+		</div>
+
+		<div id="precio">
+			<div id="contenedor">
+				<div id="datos-left">
+					<div class="filtros-titulo">
+						<label class="subtitulo">Filtro Lista Precios</label>
+					</div>
+					<p>
+					<label class="etiquetas">Subgerencia</label>
+						<select class="select-condiciones" id="subgerencia" name="mydropdown">
+							<option value="vacio">Seleccione...</option>
+							<%
+							_.each(subgerencia,function(e)
+							{ %>
+								<option value="<%=e.Id_Subgerencia%>"><%=e.Nombre%></option>
+							<%});%>
+						</select>
+					</p>
+					<p>
+						<label class="etiquetas">Estado</label>
+						<select class="select-condiciones" id="estado" name="mydropdown">
+							<option value="vacio">Seleccione...</option>
+							<option value="Activa">Activa</option>
+							<option value="Edición">Edición</option>
+							<option value="Historica">Historica</option>
+						</select>
+					</p>
+				</div>
+
+				<div id="precio-rigth">
+					<p>
+						<label style="margin-left: 26%;" class="etiquetas" >Tipo</label>
+						<select id="tipo" name="mydropdown" class="select-condiciones">
+							<option value="vacio">Seleccione...</option>
+							<option value="Subgerencia">Subgerencia</option>
+							<option value="Volumen">Volumen</option>
+							<option value="Exterior">Exterior</option>
+						</select>
+					</p>
+					<p style ="margin-left:26% !important; width:100%;">
+						<label class="etiquetas">Fecha</label>
+						<input id="desde" type="text" class="input-textbtn input-calendar" name="fecha cotizacion" value=""/>
+						<!--<label style="color:#5f5f5f;">Y</label>-->
+						<input type = "hidden" id="hasta" type="text" class="input-textrango input-calendar" name="fecha cotizacion" value=""/>
+					</p>
+
+					<!--<p>
+						<label style="margin-left: 25.9%;"id="etiquetas">Rango de Fechas</label>
+						<input id="desde" type="text" class="input-text-fecha input-calendar"/>
+						<input id = "hasta" type="text" class="input-text-fecha input-calendar"/>
+					</p>-->
+					<p>
+						<div id = "filtrarprecio"> </div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div id  = "cargatablaresult">
+			<div id = "resultados">
+				<div id ="detalle-titulo">
+					<div id="nuevalista" class="btn-add" title ="Nueva lista"> 
+					</div>
+					<label id="titulo">Resultados</label>
+					<!--<div id = "contador"><label>1-50 de 200</label></div>	
+			   		<div id = "adelante" style="margin-right: 148px;margin-top: -20px;"> </div>
+					<div id = "atras" style="margin-top: -20px;margin-right: 168px;"> </div>-->
+					<div class="paginador">
+						<div id="next" class = "btn-adelante" title="Siguiente"> 
+						</div>
+						<div id="previous" class = "btn-atras" title="Anterior"> 
+						</div>
+						<label id= "labelPaginador" class= "contadorPaginador">
+						</label>
+					</div>
+					<select name="acciones" id="accionesLista" class="accionlista">
+						<option value="accion">Acciones</option>
+					  	<option value="exportar">Exportar Excel</option>
+					  	<!--
+					  	<option value="clonar">Clonar</option>
+					  	<option value="cambiar">Cambiar Estado</option>
+					  	-->
+					  	<input type="hidden" id="datos_a_enviar" name="datos_a_enviar">
+					 	<!-- <option value="eliminar">Eliminar</option>-->
+					</select>
+				</div>
+			</div>
+			<div class = "modal fade" id = "modal-estado">
+			</div>
+		</div>
+		<div id = "cargatabla">
+
+		</div>
+	</div>
+</div>
+

@@ -1,0 +1,56 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo" class="newTitulo">Mantenedor Sectores ></label>  <label id = "subtitulo"> Nuevo Sector</label>
+		</div>
+
+		<div id="datos" style="height: 130px !important;">
+			<div id="contenedor">
+				<div class="filtros-left">
+					<p>
+						<label class="etiquetas">* Nombre</label>
+						<input id = "nombresector"type="text" class="input-text" name="nombresector" value="">
+					</p>
+					<p>
+						<label class="etiquetas">* Regi&oacute;n</label>
+						<select class="select-condiciones" id="regionselect" name="vendedor">
+							<option value="">Seleccione...</option>
+							<%
+							_.each(regiones,function(s)
+							{ %>
+								<option id = "<%=s.REGION_ID%>" value="<%=s.REGION_ID%>"><%=s.REGION_NOMBRE%>
+								</option>
+							<%});%>
+						</select>
+					</p>
+					<p>
+						<label class="etiquetas">* Provincia</label>
+						<select class="select-condiciones" id="provinciaselect" name="vendedor">
+							<option value="">Seleccione...</option>
+						</select>
+					</p>					
+				</div>
+
+				<div class="editar-rigth">
+					<p>
+						<label class="etiquetas">* Comuna</label>
+						<select class="select-condiciones" id="comunaselect" name="vendedor">
+							<option value="">Seleccione...</option>
+						</select>
+					</p>
+					<p>
+						<label class="etiquetas">* Precio Flete</label>
+						<input id = "precioflete"type="text" class="input-text" name="precioflete" value="">
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="buttons row">
+			Todos los campos marcados con un asterisco (*) son requeridos.
+        	<div id="cancelarsector" type="button" class="btn-cancelar"></div>
+        	<div id="guardarsector" type="button" class="btn-guardar"></div>
+    	</div>
+		<!--<div id="filtroResultados"></div>-->
+
+	</div>
+</div>

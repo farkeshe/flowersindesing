@@ -1,0 +1,49 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo" class="newTitulo">Mantenedor Lista de Precio ></label>  <label id = "subtitulo"> Lista Historica</label>
+		</div>
+
+		<div id="datos" style="height: 130px !important;">
+			<div id="contenedor">
+				<div class="filtros-left">
+					<p>
+						<label class="etiquetas">Nombre</label>
+						<input id = "nombrelista"type="text" class="input-text" name="nombrelista" value=<%=nombre%> readonly="readonly">
+					</p>
+					<p>
+						<label class="etiquetas">Tipo</label>
+						<select class="select-tipo" id="tiposelect" name="tipo">
+							<option value=""><%=tipo%></option>
+						</select>
+					</p>
+					<p>
+						<label class="etiquetas">Estado</label>
+						<select class="select-estado" id="estadoselect" name="estado">
+							<option id = "activo" value="2" selected="selected">Historica</option>
+						</select>
+					</p>					
+				</div>
+
+				<div class="editar-rigth">
+					<p>
+						<label class="etiquetas">Fecha Creacion</label>
+						<input id="fechaActual" type="text" name="fecha lista" readonly="readonly" value="<%=fecha%>"/>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div id="productoslista">
+			
+		</div>
+
+		<div id="buttons row">
+			Todos los campos marcados con un asterisco (*) son requeridos.
+        	<div id="cancelarlistaHistorica" type="button" class="btn-cancelar"></div>
+        	<!-- <div id="guardarlistaEditar" type="button" class="btn-guardar"></div> -->
+    	</div>
+		<!--<div id="filtroResultados"></div>-->
+
+	</div>
+</div>

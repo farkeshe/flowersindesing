@@ -1,0 +1,68 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo">Mantenedor Usuarios</label>
+		</div>
+
+		<div id="datos" style="height: 130px !important;">
+			<div id="contenedor">
+				<div class="filtros-left">
+					<div class="filtros-titulo">
+						<label class="subtitulo">Filtro Usuarios</label>
+					</div>
+					<p>
+						<label class="etiquetas">Sucursal</label>
+						<select class="select-condiciones" id="sucursalusuarios" name="tipoentidad">
+							<option value="vacio">Seleccione...</option>
+							<%
+							_.each(sucursal,function(e)
+							{ %>
+								<option value="<%=e.Id_Sucursal%>"><%=e.Nombre%></option>
+							<%});%>
+						</select>
+					</p>
+					<p>
+				</div>
+
+				<div class="filtros-rigth">
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">Perfil</label>
+						<select class="select-condiciones" id="perfilusuarios" name="categoriaentidad">
+							<option value="vacio">Seleccione...</option>
+							<%
+							_.each(perfiles,function(p)
+							{ %>
+								<option value="<%=p.Id_Perfil%>"><%=p.Tipo%></option>
+							<%});%>
+						</select>
+					</p>
+					<p>
+						<div id="filtrarUsuarios" class="btn-filtrar" style="margin-right: 1.2%;"> </div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+			<div id  = "cargatablaresult">
+			<div id = "resultados">
+				<div id ="detalle-titulo">
+					<div id="nuevousuario" class="btn-add" title ="Nuevo <br> Usuario"> 
+					</div>
+					<label id="titulo">Resultados</label>
+					<select name="acciones" id="accionesusuarios" class="accionlista">
+					<option value="Acciones">Acciones</option>
+					</select>
+					<div class="paginador">
+						<div id="next" class = "btn-adelante" title="Siguiente"></div>
+						<div id="previous" class = "btn-atras" title="Anterior"></div>
+						<label id= "labelPaginador" class= "contadorPaginador"></label>
+					</div>
+				</div>
+			</div>
+			<div class = "modal fade" id = "modal-estado">
+			</div>
+		</div>
+		<div id = "cargatabla">
+		</div>
+	</div>
+</div>

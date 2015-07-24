@@ -1,0 +1,120 @@
+/* Custom variables */
+@red : #e23225;
+
+.numero {
+	text-align: center !important;
+}
+
+td.delete {	
+	width 				: 28px; 
+	background-image    : url(../img/btntabla_normal_eliminar.png);
+	background-repeat   : no-repeat;
+	background-position : center;
+	border 				: 0px;	
+}
+
+td.delete:hover {
+	cursor:pointer;
+}
+
+.striped {
+	font-size 	: 8pt;
+	color 		: #000000;
+	tbody tr:nth-child(odd) {
+		background-color : #e0e0e0;
+	}
+
+	tbody tr:nth-child(odd):hover{
+		background-color: #f7b64a !important;
+		td{
+			background-color: #f7b64a !important;
+		}
+	}
+
+	tbody tr:nth-child(even){
+		background-color: #FFFFFF;
+	}
+
+	tbody tr:nth-child(even):hover{
+		background-color: #f7b64a !important;
+		td{
+			background-color: #f7b64a !important;
+		}
+	}
+
+	tr.odd{
+		background-color: #DFEDD7;
+	}	
+
+	tr.odd:hover{
+		background-color: #f7b64a !important;
+	}
+
+	tr.even{
+		background-color: #FFFFFF;
+	}
+
+	tr.even:hover{
+		background-color: #f7b64a !important;
+	}
+}
+
+/* Totales */
+table.total {	
+	thead, thead th {		
+		background-color 	: #FFFFFF;
+		color 				: #e23225 !important;
+		font-size 			: 8pt;
+		border 				: 0px;
+	}
+	border 			: 0px;
+	width 			: auto;
+	float 			: left;
+	
+
+	tbody {				
+		tr, tr:hover {			
+			color 				: #ffffff !important;
+			font-size 			: 8pt;
+			border 				: 0;
+			background-color 	: #e23225 !important;
+			text-align 			: center;
+
+			td:not(:first-child), td {
+				background-color 	: #e23225 !important;
+				border-top 			: 0px;
+				border-bottom 		: 0px;
+				border-left			: 0px;
+				border-right 		: 2px #ffffff solid;
+				text-align 			: center;
+			}
+
+			td.first-child, td:first-child {
+				background-color : #e23225 !important;
+				border-top 			: 0px;
+				border-bottom 		: 0px;
+				border-left			: 0px;
+				border-right 		: 2px #ffffff solid;
+				text-align 			: center;
+			}
+		}			
+
+		label {
+			font-size 	: 8pt !important;
+			display 	: inline-block;
+			font-weight : bold;
+		}
+	}
+}
+
+table {
+	tbody {
+		tr {
+			td {
+				input {
+					margin-bottom: 0px !important;
+				}
+			}
+		}
+	}
+}

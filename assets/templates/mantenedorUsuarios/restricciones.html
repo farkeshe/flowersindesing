@@ -1,0 +1,91 @@
+<div id="datos" style="height: 225px !important;">
+	<div id="contenedor">
+		<div class="filtros-left">
+			<div class="filtros-titulo">
+				<label class="subtitulo">Restricciones</label>
+			</div>
+			<p style="height: 33px;">
+				<label class="etiquetas etiquetas-usuario">Emitir Cotizaciones</label>
+				<input class = "ckemitir" id = "emitir" type="checkbox" name="ck" value="Milk"><br><br>
+					
+			</p>
+			<p style="height: 29px;">
+				<label class="etiquetas etiquetas-usuario">Editar Precios</label>
+				<input class = "ckeditar" id = "editar" type="checkbox" name="ck" value="Milk"><br><br>
+			</p>
+			<p>
+				<label class="etiquetas etiquetas-usuario">Centros de Negocio</label>
+			<div class="div-datos" style="height: 100px !important; width:50% !important;margin-top: 4px;">
+
+				<table id="tablacentros" class="tabla-datos">
+					<tbody>
+						<%
+						_.each(variable,function(m)
+						{ %>
+								<tr class="put-tooltips">
+								<td>
+									<input id = "<%=m.Id_Centro%>" class = "centros" type="checkbox" value="<%=m.Id_Centro%>">
+								</td>
+								<td><%=m.Descripcion%></td>
+							</tr>
+						<%});%>
+						</tbody>
+					</tbody>
+	 			</table>
+			</div>
+			</p>
+			<!--<p>
+				<label class = "etiquetas" id="etiquetas etiquetas-usuario">Cuota Maxima ($$$)</label>
+				<input type="text" class="input-text" name="cliente">
+			</p>-->
+
+		</div>
+
+		<div class="filtros-rigth">
+			<!--<p style ="margin-left:20% !important; width:100%;">
+				<label id="etiquetas-usuario">Cuota M&aacute;xima (Cantidad)</label>
+				<input type="text" class="input-text" name="cliente">
+			</p>-->
+		
+			<p style ="margin-left:20% !important; width:100%;">
+				<label id="etiquetas-usuario">Cant. Máx Cotizaciones</label>
+				<input id = "cantmax" type="text" class="input-text" name="cliente">
+			</p>
+			</p>
+			<p style ="margin-left:20% !important; width:100%;">
+				<label id="etiquetas-usuario">Monto Máx. Neto ($)</label>
+				<input id = "montmax" type="text" class="input-text" name="cliente">
+			</p>
+			<p style ="margin-left:20% !important; width:100%;">
+				<label class="etiquetas etiquetas-usuario">Lista de Precios</label>
+			<div class="div-datos" style="height: 100px !important; width:50% !important;">
+
+				<table id="tablalistas" class="tabla-datos" style="margin-left: 31px;">
+					<tbody>
+						<tr>
+							<td>
+								<input id = "subgerencia" type="checkbox" value="Subgerencia">
+							</td>
+							<td>Subgerencia</td>
+						</tr>
+						<tr class="put-tooltips">
+							<td>
+								<input id = "volumen" type="checkbox" value="Volumen">
+							</td>
+							<td>Volumen</td>
+						</tr>
+						<tr class="put-tooltips">
+							<td>
+								<input id = "exterior" type="checkbox" value="Exterior">
+							</td>
+							<td>Exterior
+							</td>
+						</tr>
+						</tbody>
+	 			</table>
+			</div>
+			</p>
+		</div>
+	</div>
+</div>
+		

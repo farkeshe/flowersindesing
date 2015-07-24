@@ -1,0 +1,188 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo" class="newTitulo" style="text-decoration: underline; cursor: pointer;">Listado de Pedidos</label>
+			<label id="titulo">></label>
+			<label id="titulo" class="nexttitulo" style="color: #B4E145 !important;"></label>
+		</div>
+		<div id="datos">
+			<div id="contenedor">
+				<div id="datos-left">
+					<p>
+						<label class="etiquetas" style=" margin-top: -6px;">Cliente</label>
+						<img id="clienteNewOld" style="margin-left: -16px; margin-top: -1px; float: left;">
+						<div class="input-append">
+ 							<input type="text" id="autoc1Editar" class="input-buscar" name="cotCliente" style="margin-bottom: 4px;
+ 							width: 35.5%;"/>
+  							<div id="buscarClienteEditar" class="add-on add-btn buscar" style="margin-top: -4px !important;" title="Buscador de Clientes"></div>
+						</div>
+						<!-- <div id="btnFiltro" class="btnfiltrograndeAct" title="Listado de Cotizaciones Históricas"></div> -->
+					</p>
+					<div id="btnAddCliente" class="btn-add" title="Agregar Cliente" style="margin-right: 15%; margin-top: -27px;"></div>
+					<p>
+						<label class="etiquetas">Rut</label>
+						<input type="text" id="DVEditar" class="input-text" disabled/>
+					</p>
+					<p>
+						<label class="etiquetas">Tel&eacute;fono</label>
+						<input type="text" id="TelefonoClienteEditar" class="input-text" disabled/>
+					</p>
+					<p>
+						<label class="etiquetas" >Destinatario</label>
+						<select id="DestinatarioEditar" name="Destinatario" class="select-condiciones">
+						</select>
+						<input type="hidden" name="cotDestinatario" id="idDestinatarioEditar"/>
+					</p>
+					<div id="btnAddDestinatario" class="btn-add" title="Agregar Destinatario" style="margin-right: 15%; margin-top: -27px;"></div>
+					<p>
+						<label class="etiquetas" >Direcci&oacute;n</label>
+						<input type="text" id="DireccionDestinatarioEditar" class="input-text" disabled/>
+						</select>
+					</p>
+					<p>
+						<label class="etiquetas">Tel&eacute;fono</label>
+						<input type="text" id="TelefonoDestinatarioEditar" class="input-text" disabled/>
+					</p>
+					
+				</div>
+
+				
+				<div id="datos-right">
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">Fecha Pedido</label>
+						<input id="fechaCotizacionEditar" type="text" class="input-textbtn input-calendar" name="fecha cotizacion" value="" disabled/>
+					</p>
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">Vendedor</label>
+						<input type="text" class="input-text" name="responsable" id="nomVendedorEditar" disabled/>
+						<input type="hidden" name="cotVendedor" id="idVendedor"/>
+					</p>
+
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">Responsable</label>
+						<input type="text" class="input-text" name="responsable" id="cotResponsableEditar" disabled/>
+						<input type="hidden" name="idResponsable" id="idResponsableEditar"/>
+					</p>
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">Fecha Despacho</label>
+						<input id="validezCotizacionEditar" type="text" class="input-textbtn input-calendar" name="validezcotizacion"/>
+					</p>
+
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas" >Hora Despacho</label>
+						<select id="horaentregaEditar" name="hora entrega" class="select-condiciones">
+							<option value="">Seleccione</option>
+						</select>
+					</p>
+				</div>
+				
+			</div>
+		</div>
+		<div id="detalle">
+			<div id="contenedor">
+				<div id="detalle-titulo">
+					<label class="subtitulo">Detalles Pedido</label>
+					<div id="bntAddRow" class="btn-add" title="Agregar Item"> </div>
+				</div>
+				
+				
+				<table id="tablaItem" border="1">
+					<thead>
+						<tr>
+							<th></th>
+							<th></th>
+							<th align="center"><label>Precio</label></th>
+							<th align="center"><label>Precio</label></th>
+						</tr>
+						<tr>
+							<th align="center"><label>Cantidad</label></th>
+							<th align="center"><label>Producto</label></th>
+							<th align="center"><label>Unidad</label></th>
+							<th align="center"><label>Total</label></th>
+						</tr>
+						<tr>
+							<th colspan="11" style="border-bottom: 1px black solid;"> </th>
+						</tr>
+					</thead>
+						<tbody>
+						</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="11" style="border-bottom: 1px black solid; width:100% !important;"> 
+							</td>
+						</tr>
+						<tr>
+							<td class="td-titleFoot" colspan="3">
+								<label class="etiquetas-foot" style="margin-top:22px !important;">Total Flete</label>
+							</td>
+							<td class="td-boxFoot" colspan="2" align="right" >
+								<input id="CotFleteEdicion" type="text" class="input-foot" style="margin-top:22px !important;" name="totalFlete" disabled/>
+							</td>
+						</tr>
+						<tr>
+							<td class="td-titleFoot" colspan="3">
+								<label class="etiquetas-foot">Neto</label>
+							</td>
+							<td class="td-boxFoot" colspan="2" align="right">
+								<input id="CotNeto" type="text" class="input-foot" name="neto" disabled/>
+							</td>
+						</tr>
+						<tr>
+							<td class="td-titleFoot" colspan="3">
+								<label class="etiquetas-foot">Descuento %</label>
+							</td>
+							<td class="td-boxFoot" colspan="2" align="right">
+								<input id="CotDescuentoEdicion" type="text" class="input-foot" name="descuento" maxlength="3"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="td-titleFoot" colspan="3">
+								<label class="etiquetas-foot">IVA</label>
+							</td>
+							<td class="td-boxFoot" colspan="2" align="right">
+								<input id="CotIva" type="text" class="input-foot" name="iva" disabled/>
+							</td>
+						</tr>
+						<tr>
+							<td class="td-titleFoot" colspan="3">
+								<label class="etiquetas-foot" style="margin-bottom: 22px! important;">Total</label>
+							</td>
+							<td class="td-boxFoot" colspan="2" align="right">
+								<input id="CotTotal" type="text" class="input-foot" style="margin-bottom: 22px! important;" name="total" disabled/>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+				
+			</div>
+		</div>
+		<div id="condiciones">
+			<div id="contenedor">
+				<div id="condiciones-titulo">
+					<label class="subtitulo">Condiciones Comerciales</label>
+				</div>
+
+				<div id="datos-left">
+					<p>
+						<label id="etiquetas-condiciones">Observaciones de fabricación</label>
+						<textarea type="text" class="input-text" style="height:48.3px !important; width: 68% !important;" name="instVenta" id="obsfabr"></textarea>
+					</p>
+					<p>
+						<label id="etiquetas-condiciones">Observaciones de despacho</label>
+						<textarea type="text" class="input-text" style="height:48.3px !important; width: 68% !important;" name="instFabricacion" id="obsdesp"></textarea>
+					</p>	
+				</div>
+				<div id="datos-right">
+					<p>
+						<label id="etiquetas-condiciones-der">Observaciones generales</label>
+						<textarea type="text" class="input-text" style="height:48.3px !important; width: 68% !important; margin-left:-25px !important;" name="instFabricacion" id="obsgen" ></textarea>
+					</p>	
+				</div>
+			</div>
+		</div>
+		<div id="buttons">
+			<div id="cancelar" type="button" class="btn-cancelar"></div>
+			<div id="guardar" type="button" class="btn-guardar"></div>
+		</div>
+	</div>
+</div>

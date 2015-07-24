@@ -1,0 +1,75 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo">Mantenedor Contactos ></label>  <label id = "subtitulo"> Nuevo Contacto</label>
+		</div>
+
+		<div id="datos" style="height: 200px !important;">
+			<div id="contenedor">
+				<div class="filtros-left">
+					<p>
+						<label class="etiquetas" style=" margin-top: -6px;">Nombre Contacto</label>
+						<div class="input-append">
+ 							<input type="text" id="autoc1" class="input-buscar" name="cliente" style="margin-bottom: 4px;
+ 							width: 35.6%;"/>
+ 							<div id="" class="add-on add-btn buscar" style="margin-top: -4px !important;"></div>
+						</div>
+					</p>
+
+					<p>
+						<label class="etiquetas">Nombre</label>
+						<input id = "nombreconsignatario"type="text" class="input-text" name="rut" value="">
+					</p>
+					<p>
+						<label class="etiquetas">Regi&oacute;n</label>
+						<select class="select-condiciones" id="regionesselect" name="vendedor">
+							<option value="">Seleccione...</option>
+							<%
+							_.each(regiones,function(s)
+							{ %>
+								<option id = "<%=s.REGION_ID%>" value="<%=s.REGION_ID%>"><%=s.REGION_NOMBRE%></option>
+							<%});%>
+						</select>
+					</p>
+					<p>
+						<label class="etiquetas">Provincia</label>
+						<select class="select-condiciones" id="provinciaselect" name="vendedor">
+							<option value="">Seleccione...</option>
+							
+						</select>
+					</p>
+					<p>
+						<label class="etiquetas">Comuna</label>
+
+						<select class="select-condiciones" id="comunaselect" name="vendedor">
+								<option value="">Seleccione...</option>
+							
+						</select>
+					</p>
+					
+				</div>
+
+				<div class="editar-rigth">
+					<p style ="margin-left:14% !important; width:100%;">
+						<label class="etiquetas">Direcci&oacute;n</label>
+						<input id = "direccion" type="text" class="input-text" name="rut" value="">
+					</p>
+					<p style ="margin-left:14% !important; width:100%;">
+						<label class="etiquetas">Tel&eacute;fono</label>
+						<input id = "telefono" type="text" class="input-text" name="telefono">
+					</p>
+						<p style ="margin-left:14% !important; width:100%;">
+						<label class="etiquetas">Tipo</label>
+						<input id = "lat" type="text" class="input-text" name="latitud" value="">
+					</p>	
+				</div>
+			</div>
+		</div>
+		<div id="buttons row" style="float:right;margin-top: 10px;">
+        <div id="cancelarconsignatario" type="button" class="btn-cancelar"></div>
+        <div id="guardarconsignatario" type="button" class="btn-guardar"></div>
+    </div>
+		<!--<div id="filtroResultados"></div>-->
+
+	</div>
+</div>

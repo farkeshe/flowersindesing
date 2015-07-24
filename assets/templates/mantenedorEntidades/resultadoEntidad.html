@@ -1,0 +1,28 @@
+<div id="condicionesa">
+	<table id= "exportarExcel" class = "tablageneral" border="0" cellpadding="10">
+		<thead>
+			<tr>
+				<th style="width: 14.2%;">Rut</th>
+				<th style="width: 14.2%;">Nombre</th>
+				<th style="width: 14.2%;">Teléfono</th>
+				<th style="width: 14.2%;">Email</th>
+				<th style="width: 14.2%;">Tipo</th>
+				<th style="width: 14.2%;">Clasificaci&oacute;n</th>
+			</tr>
+		</thead>
+		<tbody id = "tablaBody">
+			<%
+			_.each(entidades,function(m)
+			{ %>
+				<tr id="<%=m.Rut_Entidad%>">
+					<td id="<%=m.Rut_Entidad%>" style="width: 16.6%;"><%=m.Rut_Entidad%></td>
+					<td id="<%=m.Nombre%>" style="width: 16.6%;"><%=m.Nombre%></td>
+					<td id = "<%=m.Telefono%>" style="width: 16.6%;"><%=m.Telefono%></td>
+					<td id = "<%=m.Email%>" style="width: 16.6%;"><%=m.Email%></td>
+					<td id = "<%=m.Tipo%>" style="width: 16.6%;"><%=m.Tipo_Entidad%></td>
+					<td id = "<%=m.Clasificacion%>" style="width: 16.6%;"><%=m.Clasificacion%></td>
+				</tr>
+			<%});%>
+		</tbody>
+	</table>
+</div>

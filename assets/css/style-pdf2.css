@@ -1,0 +1,285 @@
+.general{
+	/*background-color:blue;*/
+	width: 240mm;
+	height: 179mm;
+}
+
+.cabecera{
+	/*background-color:red;*/
+	width: 195.7mm;
+	height: 1mm;
+}
+
+.identificadorcot{
+	/*background-color:white;*/
+	width: 195.7mm;
+	height: 9mm;*/
+}
+
+.tituloprincipal{
+	color: #1A1A1A;
+	font-size: 11pt;
+	font-family: "corbel","Calibri","Open Sans","Arial","Sans-Serif";
+	font-weight: bold;
+	text-align: center;
+}
+.titulos{
+	padding-top: 4mm;
+	padding-left: 4mm;
+	padding-bottom: 3.5mm;
+	color: #1A1A1A;
+	font-size: 11pt;
+	font-family: "corbel","Calibri","Open Sans","Arial","Sans-Serif";
+	font-weight: bold;
+	text-align: left;
+}
+
+.cliente-vendedor{
+	/*background-color:white;*/
+	padding-bottom: 3mm;
+}
+
+.datosencabezado{
+	border: solid 1px #1A1A1A;
+	margin-bottom: 12px;
+	padding-bottom: 10px;
+}
+
+
+.izq{
+	float:left;
+	width: 96.35mm;
+}
+
+.right{
+	float:left;
+	width: 96.35mm;
+}
+.texto{
+	padding-left: 4mm;
+	float:left;
+	width: 35mm;
+	color: #1A1A1A;
+	font-size: 8pt;
+	font-family: "corbel","Calibri","Open Sans","Arial","Sans-Serif";
+	font-weight: bold;
+	text-align: left;
+}
+
+.textoconsultado{
+	color: #1A1A1A;
+	font-size: 8pt;
+	font-family: "corbel","Calibri","Open Sans","Arial","Sans-Serif";
+	text-align: left;
+}
+
+.Detallescot{
+	/*background-color:yellow;*/
+	border: solid 1px #1A1A1A;
+	width: 195.7mm;
+	padding-bottom: 3px;
+}
+
+.entradas-texto{
+	width: 96.35mm;
+	padding-bottom: -12pt;
+}
+.encabezadotabla{
+	width: 16.67%;
+	font-size: 7pt;
+	font-family: "corbel","Calibri","Open Sans","Arial","Sans-Serif";
+	font-weight: bold;
+	text-align: center;
+}
+
+.contenedortabla{
+	width: 187.7mm;
+	padding-left: 4mm;
+}
+
+.tabla{
+	width: 187.7mm;
+}
+
+#ultimo{
+	padding-bottom: -1mm;
+}
+
+.linea{
+	width:187.7mm;
+	padding-bottom: -3.5mm;
+	padding-top: -3mm;
+}
+.lineaabajo{
+	width:187.7mm;
+	padding-bottom: 0mm;
+	padding-top: -3.8mm;
+}
+.totales{
+	width: 187.7mm; 
+	padding-left: 4mm;
+}
+.interiortotales{
+	width: 120pt;
+	height: 20pt;
+	float:right;
+}
+.textototal{
+	float:left;
+	width: 20mm;
+	color: #1A1A1A;
+	font-size: 8pt;
+	font-family: "corbel","Calibri","Open Sans","Arial","Sans-Serif";
+	font-weight: bold;
+	text-align: left;
+}
+
+.textoconsultadototal{
+	color: #1A1A1A;
+	font-size: 8pt;
+	font-family: "corbel","Calibri","Open Sans","Arial","Sans-Serif";
+	text-align: right;
+}
+
+.entradas-total{
+	padding-bottom: -12pt;
+}
+
+#ultimototal{
+	padding-bottom: 4mm;
+}
+
+.condcomerc{
+	/*background-color:green;*/
+	border: solid 1px #1A1A1A;
+	width: 195.7mm;
+	margin-top: 3mm;
+}
+.interiorizq{
+	float:left;
+	/*background-color:orange;*/
+	width:99mm;
+	padding-bottom: 4mm; 
+}
+
+.interiorder{
+	float:right;
+	/*background-color:red;*/
+	width:96mm;
+	padding-bottom: 4mm; 
+}
+
+.textocc{
+	padding-left: 4mm;
+	float:left;
+	width: 35mm;
+	color: #1A1A1A;
+	font-size: 8pt;
+	font-family: "corbel","Calibri","Open Sans","Arial","Sans-Serif";
+	font-weight: bold;
+	text-align: left;
+}
+
+.textoconsultadocc{
+	padding-left: 4mm;
+	color: #1A1A1A;
+	font-size: 8pt;
+	font-family: "corbel","Calibri","Open Sans","Arial","Sans-Serif";
+	text-align: left;
+}
+
+.Datostransferencia{
+	/*background-color:yellow;*/
+	border: solid 1px #1A1A1A;
+	width: 195.7mm;
+	height:100px;/*quitar esto despues*/
+	margin-top: 3mm;
+}
+
+.footer{
+	/*background-color:red;*/
+	width: 195.7mm;
+	height: 5mm;
+	margin-top: 1mm;
+}
+
+.textoconsultadocontacto{
+	color: #1A1A1A;
+	font-size: 8pt;
+	font-family: "corbel","Calibri","Open Sans","Arial","Sans-Serif";
+	margin-left: 110pt;
+}
+
+.datostabla{
+	width: 16.67%;
+	font-size: 7pt;
+	font-family: "corbel","Calibri","Open Sans","Arial","Sans-Serif";
+	text-align: center;
+}
+.tablageneral tr:nth-child(even) td{
+	background-color:#e8ecee;
+}
+.tablageneral tr:nth-child(odd) td{background-color:#fbfbfb;}
+
+#parrafocontacto{
+	padding-top: -9pt;
+	padding-right: 4mm;
+
+}
+.espaciovendedor{
+	height:9.9mm;
+}
+
+#econtacto{
+	padding-bottom: 1.3mm;
+}
+.divclass{ 
+	padding-left: 4mm;
+	float:left;
+	width: 35mm;
+	color: #1A1A1A;
+	font-size: 8pt;
+	font-family: "corbel","Calibri","Open Sans","Arial","Sans-Serif";
+	font-weight: bold;
+	text-align: left;
+
+	margin-left:10mm;
+	margin-right: 10mm;
+	border-top-width: 2px;
+	border-top:thin solid;
+    border-color:black;
+}
+.divclass2{
+
+padding-left: 4mm;
+	float:left;
+	width: 45mm;
+	color: #1A1A1A;
+	font-size: 8pt;
+	font-family: "corbel","Calibri","Open Sans","Arial","Sans-Serif";
+	font-weight: bold;
+	text-align: left;
+
+	margin-right:10mm;
+	border-top-width: 2px;
+	border-top:thin solid;
+    border-color:black;
+}
+.divclass3{
+
+padding-left: 4mm;
+	float:left;
+	width: 35mm;
+	color: #1A1A1A;
+	font-size: 8pt;
+	font-family: "corbel","Calibri","Open Sans","Arial","Sans-Serif";
+	font-weight: bold;
+	text-align: left;
+
+	margin-left: 10mm;
+	border-top-width: 2px;
+	border-top:thin solid;
+    border-color:black;
+}
+
+}

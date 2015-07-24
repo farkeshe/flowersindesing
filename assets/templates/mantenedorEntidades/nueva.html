@@ -1,0 +1,59 @@
+<div class='scroll'>
+	<div id="principal">
+		<div id="apphead">
+			<label id="titulo" class="newTitulo">Mantenedor Clientes></label>  <label id = "subtitulo">Nuevo Cliente</label>
+		</div>
+
+		<div id="datos" style="height: 130px !important;">
+			<div id="contenedor">
+				<div class="filtros-left">
+					<p>
+						<label class="etiquetas">*Rut</label>
+						<input type="text" class="input-text" id = "rut" name="rut" value=""maxlength="8">
+					</p>
+					<p>
+						<label class="etiquetas">*Nombre</label>
+						<input type="text" class="input-text" id = "nombre" name="rut" value="">
+					</p>
+						<p>
+						<label class="etiquetas">&nbsp;&nbsp;Tel&eacute;fono</label>
+						<input type="text" class="input-text" id = "telefono" name="rut" value="">
+					</p>
+					<label id="mensaje" style="color:#ff3c16 ;font-family: 'Calibri', 'Open Sans', 'Arial', 'sans-serif' !important;font-size: 12pt !important;">&nbsp;&nbsp;texto</label>
+				</div>
+
+				<div class="editar-rigth">
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">&nbsp;&nbsp;Email</label>
+						<input id = "email" id = "email" type="text" class="input-text" name="rut" value="">
+					</p>
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">&nbsp;&nbsp;Tipo</label>
+						<select class="select-condiciones" id="tipoentidad" name="vendedor" disabled>
+							<option value="Cliente">Cliente</option>
+						</select>
+					</p>
+					<p style ="margin-left:25% !important; width:100%;">
+						<label class="etiquetas">*Clasificaci&oacute;n</label>
+						<select class="select-condiciones" id="clasificacionaentidad" name="clasificacionaentidad">
+							<option value="">Seleccione...</option>
+							<%
+							_.each(clasificacion,function(s)
+							{ %>
+								<option id = "<%=s.Id_ClasificacionEntidad%>" value="<%=s.Id_ClasificacionEntidad%>"><%=s.Nombre%>
+								</option>
+							<%});%>
+						</select>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div id="buttons row">
+			Todos los campos marcados con un asterisco (*) son requeridos.
+	        <div id="cancelarentidad" type="button" class="btn-cancelar"></div>
+	        <div id="guardarnuevaentidad" type="button" class="btn-guardar"></div>
+    	</div>
+		<!--<div id="filtroResultados"></div>-->
+
+	</div>
+</div>
