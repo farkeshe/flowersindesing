@@ -319,7 +319,7 @@
             return false;
           };
         })(this));
-        return $('#categoria').click((function(_this) {
+        return $('#mcategoria').click((function(_this) {
           return function(e) {
             e.preventDefault();
             e.stopPropagation();
@@ -332,7 +332,7 @@
             $('#' + Singleton.get().idBtnFiltroArticulo).popover('destroy');
             $('#appView').css('display', 'block');
             $('#appViewNext').empty();
-            _this.repartidores = new Repartidores();
+            _this.categoria = new categoria();
             return false;
           };
         })(this));

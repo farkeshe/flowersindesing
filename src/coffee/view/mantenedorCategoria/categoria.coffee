@@ -1,9 +1,9 @@
 define [
 	'backbone'
-	'text!tpl/mantenedorProductos/productos.html'
-	'text!tpl/mantenedorProductos/resultados.html'
-	'text!tpl/mantenedorProductos/nuevo.html'
-	'text!tpl/mantenedorProductos/editar.html'
+	'text!tpl/mantenedorCategoria/productos.html'
+	'text!tpl/mantenedorCategoria/resultados.html'
+	'text!tpl/mantenedorCategoria/nuevo.html'
+	'text!tpl/mantenedorCategoria/editar.html'
 	'text!tpl/gestorCotizaciones/modalCliente.html'
 	'assets/js/view/paginador'
 	'assets/js/model/producto'
@@ -42,7 +42,7 @@ define [
 			$('#previous').tooltip({'trigger':'hover','delay':{'show':100,'hide':100}})
 			#setiamos los tooltips agregar producto
 			$('#nuevoproducto').tooltip({'trigger':'hover','delay':{'show':100,'hide':100}})
-			$('#buscarProducto').tooltip({'trigger':'hover','delay':{'show':100,'hide':100}})
+			$('#insertcategoria').tooltip({'trigger':'hover','delay':{'show':100,'hide':100}})
 
 			#bloqueamos la opcion de añadir nuevos productos si el perfil no es administrador, gerente o supervisor
 			if Singleton.get().idPerfilUsuarioLogueado isnt '1' and Singleton.get().idPerfilUsuarioLogueado isnt '2' and Singleton.get().idPerfilUsuarioLogueado isnt '3'
@@ -85,7 +85,10 @@ define [
 				close: ->
 					$('#autoc1').removeClass("ui-autocomplete-loading")
 
-			$('#buscarProducto').click  (e) =>
+			$('#insertcategoria').click  (e) =>
+				console.log("click holi");
+				categ = $('#autoc12').val()
+				console.log(categ);
 				e.preventDefault()
 				e.stopPropagation()
 				#oculto el popover de la nueva cotización

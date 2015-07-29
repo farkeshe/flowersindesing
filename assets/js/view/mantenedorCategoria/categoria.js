@@ -3,7 +3,7 @@
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty;
 
-  define(['backbone', 'text!tpl/mantenedorProductos/productos.html', 'text!tpl/mantenedorProductos/resultados.html', 'text!tpl/mantenedorProductos/nuevo.html', 'text!tpl/mantenedorProductos/editar.html', 'text!tpl/gestorCotizaciones/modalCliente.html', 'assets/js/view/paginador', 'assets/js/model/producto'], function(Backbone, Tplproductos, Tplresultados, Tplnuevo, Tpleditar, TplmodalCliente, Paginador, ProductoModel) {
+  define(['backbone', 'text!tpl/mantenedorCategoria/productos.html', 'text!tpl/mantenedorCategoria/resultados.html', 'text!tpl/mantenedorCategoria/nuevo.html', 'text!tpl/mantenedorCategoria/editar.html', 'text!tpl/gestorCotizaciones/modalCliente.html', 'assets/js/view/paginador', 'assets/js/model/producto'], function(Backbone, Tplproductos, Tplresultados, Tplnuevo, Tpleditar, TplmodalCliente, Paginador, ProductoModel) {
     var Productos;
     return Productos = (function(superClass) {
       extend(Productos, superClass);
@@ -77,7 +77,7 @@
             'hide': 100
           }
         });
-        $('#buscarProducto').tooltip({
+        $('#insertcategoria').tooltip({
           'trigger': 'hover',
           'delay': {
             'show': 100,
@@ -130,8 +130,12 @@
             return $('#autoc1').removeClass("ui-autocomplete-loading");
           }
         });
-        $('#buscarProducto').click((function(_this) {
+        $('#insertcategoria').click((function(_this) {
           return function(e) {
+            var categ;
+            console.log("click holi");
+            categ = $('#autoc12').val();
+            console.log(categ);
             e.preventDefault();
             e.stopPropagation();
             $('#btnFiltro').removeClass('btnfiltrograndeDis');

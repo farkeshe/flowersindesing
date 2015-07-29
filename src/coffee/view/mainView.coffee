@@ -345,7 +345,7 @@ define [
 				@productos = new productos()
 				false
 
-			$('#categoria').click (e) =>
+			$('#mcategoria').click (e) =>
 				e.preventDefault()
 				e.stopPropagation()
 				$(document).unbind('click')
@@ -361,7 +361,7 @@ define [
 				#=============================================================================================
 				$('#appView').css('display','block')
 				$('#appViewNext').empty()
-				@repartidores = new Repartidores()
+				@categoria = new categoria()
 				false
 
 			#==========================================================================================================================================
